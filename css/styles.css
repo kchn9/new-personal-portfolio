@@ -3,10 +3,39 @@ html, body {
     padding: 0;
 }
 
-.background {
+html {
+    background-color: #232741;
+}
+
+body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        #465298,
+        #465298 10%,
+        #00000000 90%,
+        #00000000
+    );
+}
+
+.hello-section {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.particles-background {
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: 0;
+    background-color: #232741;
 }
