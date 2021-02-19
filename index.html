@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateusz Kuchnia | Web developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png?v=2">
+    <link rel="manifest" href="./img/favicon/site.webmanifest?v=2">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -11,10 +15,21 @@
     <!--Intro section BEGIN-->
     <header>
         <section class='intro'>
-            <img id='intro__avatar' src="..." alt="Mateusz Kuchnia avatar"/>
-            <h1 class='intro__greeting'>Hello!</h1>
-            <h2 class='intro__description'>I'm Mateusz Kuchnia.</h2>
-            <button class='intro__enter-button'>Enter into my world</button>
+            <img class='intro__avatar' src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar"/>
+            <div class='intro__text'>
+                <h1 class='text__greeting'>Hello!</h1>
+                <div class='text__introduction'>
+                    <h2 class='introduction__name'>I'm Mateusz Kuchnia</h2>
+                    <hr>
+                </div>
+                <h3 class='text__job'>Web developer</h3>
+            </div>
+            <p class='intro__description'>
+                Inquisitive and ambitious fledgling web developer.
+                Constantly developing my skills and love to work in team.
+                Always curious and creative.
+            </p>
+            <button class='intro__enter-btn'>Dive</button>
         </section>
     </header>
     <!--Intro section END-->
@@ -40,9 +55,8 @@
     </nav>
     <!--Navbar END-->
 
-
     <canvas class="particles-background"></canvas>
     <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/canvas.js"></script>
 </body>
 </html>

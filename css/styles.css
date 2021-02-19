@@ -2,42 +2,204 @@
 
 /* using palette: #fffbee #8872ad #32558c #163460 #021c33 */
 
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,300&display=swap');
+
 * {
     margin:0;
     padding:0;
 }
 
 html {
+    font-size: 16px;
     background-color: #021C33;
+    font-family: 'Newsreader', 'Times New Roman', Times, serif
+}
+
+body {
+    display: block;
 }
 
 /* Global styles END */
 
 /* Intro-section styles START */
 
-section.intro {
-    height: 100vh;
-    margin: 0 auto;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
+header {
     color: #fffbee;
+    font-size: 1.6rem;
 }
 
-.intro__avatar {
-    grid-area: 1 / span 3 / 1 / span 4;
-    max-width: 100%;
+    .intro {
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+        .intro__avatar {
+            max-width: 30%;
+            height: auto;
+            vertical-align: top;
+            padding-bottom: 3%;
+        }
+
+        .intro__text {
+            display: inline-flex;
+            flex-flow: column nowrap;
+        }
+
+            .text__greeting {
+                font-size: 8rem;
+                margin-left: 2%;
+            }
+
+            .text__introduction {
+                margin-left: 5%;
+            }
+
+                .introduction__name {
+                    font-size: 2.1rem;
+                }
+
+                .introduction__name + hr {
+                    width: 92%;
+                    margin: 0 auto;
+                }
+
+            .text__job {
+                font-size: 1.3rem;
+                padding-top: 3%;
+                font-weight: 300;
+                font-style: italic;
+            }
+
+        .intro__description::first-line {
+            text-align: justify;
+        }
+
+        .intro__description {
+            padding: 3% 0;
+            line-height: 1.3;
+        }
+
+
+    .intro__enter-btn {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #32558c;
+        border: none;
+        color: #fffbee;
+        padding: 10px 20px;
+        width: 30%;
+        margin: 5% auto;
+        font-size: 1.4rem;
+    }
+
+@media only screen and (max-width: 890px) {
+    .intro {
+        width: 60%;
+        padding-top: 21%;
+    }
+
+    .text__greeting {
+        font-size: 4.3rem;
+    }
+
+    .introduction__name {
+        font-size: 1.6rem;
+    }
+
+    .introduction__job {
+        font-size: 1rem;
+    }
+
+    .intro__description {
+        padding: 7% 0;
+    }
 }
 
-.intro__greeting {
-    display: inline-block;
-    font-size: 4rem;
+@media only screen and (max-width: 640px) {
+    .intro {
+        width: 70%;
+        padding-top: 23%;
+    }
+
+    .intro__enter-btn {
+        padding: 10px 20px;
+        width: 30%;
+        margin: 5% auto;
+        font-size: 0.9rem;
+    }
 }
 
-.intro__description {
+@media only screen and (max-width: 478px) {
+    .intro {
+        width: 80%;
+        padding-top: 27%;
+    }
+
+    .intro__description::first-line {
+        text-align: center;
+    }
+
+    .intro__description {
+        font-size: 1.5rem;
+    }
 }
 
-/* Intro-section styles START */
+@media only screen and (max-width: 410px) {
+    .intro {
+        width: 88%;
+        padding-top: 33%;
+    }
+
+    .text__greeting {
+        font-size: 3.1rem;
+    }
+
+    .introduction__name {
+        font-size: 1.4rem;
+    }
+
+    .introduction__job {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .intro {
+        width: 90%;
+        padding-top: 36%;
+    }
+
+    .text__greeting {
+        font-size: 2.7rem;
+    }
+
+    .introduction__name {
+        font-size: 1.2rem;
+    }
+
+    .introduction__job {
+        font-size: 0.8rem;
+    }
+
+    .intro__description {
+        font-size: 1.3rem;
+        padding: 7% 0;
+    }
+
+    .intro__enter-btn {
+        font-size: 0.8;
+    }
+}
+
+/* Intro-section styles END */
+
+/* Particle background START */
 
 .particles-background {
     background-color: #021C33;
@@ -47,3 +209,5 @@ section.intro {
     top: 0;
     z-index: 0;
 }
+
+/* Particle background END */
