@@ -12,11 +12,11 @@
 html {
     font-size: 16px;
     background-color: #021C33;
-    font-family: 'Newsreader', 'Times New Roman', Times, serif
+    font-family: 'Newsreader', 'Times New Roman', Times, serif;
 }
 
 body {
-    display: block;
+    height: 3000px;
 }
 
 /* Global styles END */
@@ -26,16 +26,17 @@ body {
 header {
     color: #fffbee;
     font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
     .intro {
         position: relative;
-        z-index: 1;
-        height: 100vh;
         width: 50%;
         text-align: center;
         margin: 0 auto;
-        padding-top: 10%;
     }
 
         .intro__avatar {
@@ -86,22 +87,21 @@ header {
 
 
     .intro__enter-btn {
-        display: block;
-        text-decoration: none;
-        text-transform: uppercase;
         background-color: #32558c;
         border: none;
         color: #fffbee;
-        padding: 10px 20px;
-        width: 30%;
-        margin: 5% auto;
+        display: block;
         font-size: 1.4rem;
+        margin: 5% auto;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 30%;
     }
 
 @media only screen and (max-width: 890px) {
     .intro {
         width: 60%;
-        padding-top: 21%;
     }
 
     .text__greeting {
@@ -124,21 +124,19 @@ header {
 @media only screen and (max-width: 640px) {
     .intro {
         width: 70%;
-        padding-top: 23%;
     }
 
     .intro__enter-btn {
+        font-size: 0.9rem;
+        margin: 5% auto;
         padding: 10px 20px;
         width: 30%;
-        margin: 5% auto;
-        font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 478px) {
     .intro {
         width: 80%;
-        padding-top: 27%;
     }
 
     .intro__description::first-line {
@@ -153,7 +151,6 @@ header {
 @media only screen and (max-width: 410px) {
     .intro {
         width: 88%;
-        padding-top: 33%;
     }
 
     .text__greeting {
@@ -172,7 +169,6 @@ header {
 @media only screen and (max-width: 330px) {
     .intro {
         width: 90%;
-        padding-top: 36%;
     }
 
     .text__greeting {
@@ -199,15 +195,27 @@ header {
 
 /* Intro-section styles END */
 
+/* Navbar styles START */
+
+.navigation {
+    position: -webkit-sticky;
+    position: sticky;
+    color: #fffbee;
+    top: 20vh;
+}
+
+/* Navbar styles END */
+
 /* Particle background START */
 
 .particles-background {
     background-color: #021C33;
-    display: block;
+    height: 100vh;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
-    z-index: 0;
+    width: 100vw;
+    z-index: -1;
 }
 
 /* Particle background END */
