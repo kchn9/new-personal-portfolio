@@ -9,6 +9,7 @@
   "author": "kchn9",
   "license": "MIT",
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "particlesjs": "^2.2.3"
   }
 }

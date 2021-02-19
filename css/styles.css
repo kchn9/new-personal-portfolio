@@ -1,41 +1,49 @@
-html, body {
-    margin: 0;
-    padding: 0;
+/* Global styles START */
+
+/* using palette: #fffbee #8872ad #32558c #163460 #021c33 */
+
+* {
+    margin:0;
+    padding:0;
 }
 
 html {
-    background-color: #232741;
+    background-color: #021C33;
 }
 
-body::after {
-    content: '';
-    display: block;
+/* Global styles END */
+
+/* Intro-section styles START */
+
+section.intro {
+    height: 100vh;
+    margin: 0 auto;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-        45deg,
-        #465298,
-        #465298 10%,
-        #00000000 90%,
-        #00000000
-    );
+    z-index: 1;
+    color: #fffbee;
 }
 
-.hello-section {
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-flow: column nowrap;
+.intro__avatar {
+    grid-area: 1 / span 3 / 1 / span 4;
+    max-width: 100%;
 }
+
+.intro__greeting {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.intro__description {
+}
+
+/* Intro-section styles START */
 
 .particles-background {
-    position: absolute;
+    background-color: #021C33;
     display: block;
-    top: 0;
     left: 0;
+    position: absolute;
+    top: 0;
     z-index: 0;
-    background-color: #232741;
 }
