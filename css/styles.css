@@ -25,16 +25,33 @@ html {
     font-family: 'Newsreader', 'Times New Roman', Times, serif;
 }
 
-body {
-    height: 3000px;
+main {
+    display: block;
 }
 
 /* Global styles END */
 
 /* Intro-section styles START */
 
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 28, 51, 0.1);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23052543' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23092d53' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%230f3561' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23163d6d' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%231e4579' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23274d83' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%2332558c' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
 header {
     color: #fffbee;
+    position: relative;
+    overflow: hidden;
     font-size: 1.6rem;
     height: 100vh;
     display: flex;
@@ -222,6 +239,7 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    z-index: 500;
 }
 
     .navigation__logo {
@@ -378,14 +396,46 @@ header {
     }
 }
 
-
 /* Navbar styles END */
 
 /* Home section START */
 
-
+.home {
+    position: relative;
+    height: 100vh;
+    background-color: #021C33;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 20% 100%, 0 90%);
+    top: -96px;
+    z-index: 400;
+}
 
 /* Home section END */
+
+/* Project section START */
+
+.projects {
+    position: relative;
+    height: 120vh;
+    bottom: calc(20vh + 96px);
+    background-color: #32558c;
+    clip-path: polygon(0 0, 20% 10%, 100% 0, 100% 100%, 70% 90%, 0 100%);
+    z-index: 300;
+}
+
+/* Project section END */
+
+/* Contact section START */
+
+.contact {
+    position: relative;
+    height: 80vh;
+    bottom: calc(32vh + 96px);
+    background-color: #8872ad;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    z-index: 200;
+}
+
+/* Contact section END */
 
 /* Modifiers START */
 
@@ -398,6 +448,10 @@ header {
     max-width: 30px;
     height: auto;
     object-fit: contain;
+}
+
+.--hover-icon {
+    filter: brightness(0) saturate(100%) invert(54%) sepia(12%) saturate(1379%) hue-rotate(221deg) brightness(86%) contrast(83%);
 }
 
 .--hidden {
@@ -415,7 +469,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-    z-index: -1;
+    z-index: -100;
 }
 
 /* Particle background END */
