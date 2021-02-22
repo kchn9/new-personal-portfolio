@@ -1,8 +1,18 @@
-/* Global styles START */
+/*
+COLOR PALETTE:
+#fffbee : white, fonts, contrast
+#8872ad : purple, clickable, interactive
+#32558c : blue, secondary clickable, interactive
+#163460 : blue, background, addings
+#021c33 : dark blue, main background
+*/
 
-/* using palette: #fffbee #8872ad #32558c #163460 #021c33 */
-
+/*
+FONT IMPORTS:
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,300&display=swap');
+*/
+
+/* Global styles START */
 
 * {
     margin:0;
@@ -69,12 +79,12 @@ header {
                     margin: 0 auto;
                 }
 
-            .text__job {
-                font-size: 1.3rem;
-                padding-top: 3%;
-                font-weight: 300;
-                font-style: italic;
-            }
+                .introduction__job {
+                    font-size: 1.7rem;
+                    padding-top: 2%;
+                    font-weight: 300;
+                    font-style: italic;
+                }
 
         .intro__description::first-line {
             text-align: justify;
@@ -87,8 +97,7 @@ header {
 
 
     .intro__enter-btn {
-        background-color: #32558c;
-        border: none;
+        background-color: #32558c !important;
         color: #fffbee;
         display: block;
         font-size: 1.4rem;
@@ -113,7 +122,7 @@ header {
     }
 
     .introduction__job {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .intro__description {
@@ -162,7 +171,7 @@ header {
     }
 
     .introduction__job {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -180,7 +189,7 @@ header {
     }
 
     .introduction__job {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .intro__description {
@@ -201,12 +210,13 @@ header {
     color: #fffbee;
     position: -webkit-sticky;
     position: sticky;
-    top: 1px;
+    top: 0;
     width: 100%;
+    height: 80px;
     border: 8px solid;
     border-right: none;
     border-left: none;
-    border-image-source: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(50,85,140,0.05) 50%, rgba(50,85,140,0.25) 60%, rgba(50,85,140, 0.9) 90%);
+    border-image-source: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(50,85,140,0.04) 50%, rgba(50,85,140,0.28) 60%, rgba(50,85,140, 0.9) 90%);
     border-image-slice: 1;
     display: flex;
     flex-flow: row nowrap;
@@ -216,24 +226,24 @@ header {
 
     .navigation__logo {
         display: flex;
+        position: relative;
         flex-flow: column nowrap;
         align-items: flex-start;
         justify-content: center;
         width: inherit;
         max-width: 20%;
-        padding: 1% 0 1% 2%;
-        text-overflow: ellipsis;
+        margin: 1% 0 1% 2%;
         min-width: fit-content;
     }
 
         .logo__name {
-            font-size: 1.7rem;
+            font-size: 2.6rem;
             border-bottom: solid 1px #fffbee;
             margin: 0;
         }
 
         .logo__job {
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             font-style: italic;
             font-weight: 300;
             padding-top: 1%;
@@ -245,35 +255,150 @@ header {
         justify-content: flex-end;
         align-items: center;
         width: inherit;
-        max-width: 60%;
-        height: 50px;
+        min-width: fit-content;
     }
 
         .bar__link {
             margin: 0 1%;
-            padding: 0 1%;
+            padding: 3% 1%;
             cursor: pointer;
+            flex-shrink: 0;
         }
-
-            .bar__link > img {
-                max-width: 30px;
-                height: auto;
-                object-fit: contain;
-            }
 
             #icon_home {
                 position: relative;
                 bottom: 4px;
             }
 
-            .link__text {
+            #icon_contact {
+                position: relative;
+                bottom: 2px;
+            }
+
+            .link__bar-text {
                 text-decoration: none;
                 text-transform: uppercase;
                 margin: 10px;
                 color: #fffbee;
             }
 
+    .navigation__menu-btn {
+        margin-right: 2%;
+    }
+
+    .navigation__dropdown {
+        position: absolute;
+        top: 110%;
+        right: 0;
+        width: 200px;
+        border-radius: 1px;
+        background: linear-gradient(to right, rgba(50,85,140,0.2), rgba(50,85,140,0.8));
+    }
+
+        .dropdown__link {
+            padding: 4% 8%;
+            margin: 2%;
+            cursor: pointer;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .dropdown__link > img {
+                flex-shrink: 0;
+                margin-left: 10px;
+            }
+
+            .link__dropdown-text {
+                flex-shrink: 0;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fffbee;
+            }
+
+@media only screen and (max-width: 1024px) {
+    .logo__name {
+        font-size: 2.1rem;
+    }
+
+    .logo__job {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation__logo {
+        margin-left: 4% ;
+    }
+
+    .navigation__bar {
+        display: none;
+    }
+
+    .navigation__dropdown {
+        background: linear-gradient(to right, rgba(50,85,140,0.1), rgba(50,85,140,0.8));
+    }
+
+    .navigation__menu-btn {
+        display: block !important;
+        margin-right: 4%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navigation__dropdown {
+        background: linear-gradient(to right, rgba(50,85,140,0.05), rgba(50,85,140,0.7));
+    }
+
+    .logo__name {
+        font-size: 1.8rem;
+    }
+
+    .logo__job {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .navigation__logo {
+        margin-left: 5% ;
+    }
+
+        .logo__name {
+            font-size: 1.5rem;
+        }
+
+        .logo__job {
+            font-size: 1.1rem;
+        }
+
+    .navigation__menu-btn {
+        margin-right: 5%;
+    }
+}
+
+
 /* Navbar styles END */
+
+/* Modifiers START */
+
+.--none-style {
+    background: none;
+    border: none;
+}
+
+.--icon-img {
+    max-width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+.--hidden {
+    display: none;
+}
+
+/* Modifiers END */
 
 /* Particle background START */
 

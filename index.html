@@ -21,15 +21,15 @@
                 <div class='text__introduction'>
                     <h2 class='introduction__name'>I'm Mateusz Kuchnia</h2>
                     <hr>
+                    <h3 class='introduction__job'>Web developer</h3>
                 </div>
-                <h3 class='text__job'>Web developer</h3>
             </div>
             <p class='intro__description'>
                 Inquisitive and ambitious fledgling web developer.
                 Constantly developing my skills and love to work in team.
                 Always curious and creative.
             </p>
-            <button class='intro__enter-btn'>Dive</button>
+            <button class='intro__enter-btn --none-style'>Dive</button>
         </section>
     </header>
     <!--Intro section END-->
@@ -42,19 +42,47 @@
         </div>
         <ul class='navigation__bar'>
             <li class='bar__link'>
-                <img src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
-                <a class='link__text' href='...'>Home</a>
+                <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
+                <a class='link__bar-text' href='...'>Home</a>
             </li>
             <li class='bar__link'>
-                <img src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon'>
-                <a class='link__text' href='...'>Projects</a>
+                <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon'>
+                <a class='link__bar-text' href='...'>Projects</a>
+            </li>
+            <li class='bar__link'>
+                <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon'>
+                <a class='link__bar-text' href='...'>Contact me</a>
+            </li>
+        </ul>
+        <button class='navigation__menu-btn --none-style --hidden'>
+            <img class='--icon-img' src='./img/icons/icons8-menu.svg' id='icon_menu' alt='Menu icon'>
+        </button>
+        <ul class='navigation__dropdown --hidden'>
+            <li class='dropdown__link'>
+                <a class='link__dropdown-text' href='...'>Home</a>
+                <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
+            </li>
+            <li class='dropdown__link'>
+                <a class='link__dropdown-text' href='...'>Projects</a>
+                <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon'>
+            </li>
+            <li class='dropdown__link'>
+                <a class='link__dropdown-text' href='...'>Contact me</a>
+                <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon'>
             </li>
         </ul>
     </nav>
     <!--Navbar END-->
 
+    <!--Home section START-->
+
+    <!--Home section END-->
+
+    <!--Background START-->
     <canvas class="particles-background"></canvas>
     <script src="./node_modules/particlesjs/dist/particles.min.js"></script>
     <script src="./js/canvas.js"></script>
+    <!--Background END-->
+    <script src="./js/index.js"></script>
 </body>
 </html>
