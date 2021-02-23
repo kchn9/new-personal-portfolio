@@ -7,10 +7,8 @@ COLOR PALETTE:
 #021c33 : dark blue, main background
 */
 
-/*
-FONT IMPORTS:
+/* FONT IMPORTS :*/
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,300&display=swap');
-*/
 
 /* Global styles START */
 
@@ -230,6 +228,7 @@ header {
     top: 0;
     width: 100%;
     height: 80px;
+    background-color: #021C33;
     border: 8px solid;
     border-right: none;
     border-left: none;
@@ -401,13 +400,77 @@ header {
 /* Home section START */
 
 .home {
-    position: relative;
-    height: 100vh;
     background-color: #021C33;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 20% 100%, 0 90%);
-    top: -96px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 10% 100%, 0 95%);
+    color: #fffbee;
+    height: 150vh;
+    position: relative;
+    top: 0;
     z-index: 400;
 }
+
+    .home__development {
+        text-align: center;
+        padding-top: 5%;
+    }
+
+        .development__header {
+            font-size: 3.5rem;
+        }
+
+        .development__attributes {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+            margin: 5%;
+        }
+
+            .attributes__card {
+                align-items: center;
+                background-color: #32558c;
+                display: flex;
+                flex-flow: column nowrap;
+                flex: 1;
+                justify-content: space-between;
+                margin: 0 3%;
+                padding: 3%;
+            }
+
+                .card__header {
+                    font-size: 1.9rem;
+                }
+
+                .card__img {
+                    max-height: 170px;
+                    width: auto;
+                    padding: 20%
+                }
+
+                .card__description {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    line-height: 1.3;
+                    flex: 1;
+                }
+
+    .home__technologies {
+        margin-top: 7%;
+        text-align: center;
+    }
+
+        .technologies__header {
+            font-size: 3rem;
+        }
+
+        .technologies__bar {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 5%;
+        }
+
 
 /* Home section END */
 
@@ -424,7 +487,7 @@ header {
 
 /* Project section END */
 
-/* Contact section START */
+/* Contact sectio~n START */
 
 .contact {
     position: relative;
@@ -450,8 +513,18 @@ header {
     object-fit: contain;
 }
 
+.--card-icon {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(3%) saturate(2054%) hue-rotate(325deg) brightness(111%) contrast(111%);
+}
+
 .--hover-icon {
     filter: brightness(0) saturate(100%) invert(54%) sepia(12%) saturate(1379%) hue-rotate(221deg) brightness(86%) contrast(83%);
+}
+
+.--technology-icon {
+    height: 60px;
+    max-height: 100px;
+    width: auto;
 }
 
 .--hidden {
