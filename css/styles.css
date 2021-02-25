@@ -296,6 +296,7 @@ header {
             .link__bar-text {
                 text-decoration: none;
                 text-transform: uppercase;
+                font-style: italic;
                 margin: 10px;
                 color: #fffbee;
             }
@@ -404,7 +405,6 @@ header {
     background-color: #021C33;
     clip-path: polygon(0 0, 100% 0, 100% 92%, 20% 100%, 0 92%);
     color: #fffbee;
-    height: min(fit-content, 150vh);
     position: relative;
     z-index: 400;
 }
@@ -437,6 +437,7 @@ header {
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: baseline;
+                align-items: center;
                 background-color: #32558c;
                 flex: 1;
                 margin: 0 2%;
@@ -498,6 +499,56 @@ header {
                 top: 6px;
             }
 
+@media only screen and (max-width: 1024px) {
+    /* todo */
+}
+
+@media only screen and (max-width: 768px) {
+    .development__header {
+        margin-bottom: 4%;
+    }
+
+    .development__attributes {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 5%;
+    }
+
+        .attributes__card {
+            display: grid;
+            grid-template: repeat(auto-fill, 20%) / repeat(6, 1fr);
+            grid-template-areas:
+                "img img hd hd hd hd"
+                "img img hd hd hd hd"
+                "img img txt txt txt txt"
+                "img img txt txt txt txt"
+                "img img txt txt txt txt";
+            margin: 5% 2%;
+            padding: 6% 2%;
+            justify-items: center;
+            align-items: end;
+            justify-content: center;
+            align-content: space-between;
+            column-gap: 1%;
+        }
+
+            .card__img {
+                grid-area: img;
+                max-width: 150px;
+                padding: 0;
+                padding-left: 1%;
+                margin: 0 auto;
+            }
+
+            .card__header {
+                grid-area: hd;
+            }
+
+            .card__description {
+                text-align: center;
+                grid-area: txt;
+            }
+}
 
 /* Home section END */
 
