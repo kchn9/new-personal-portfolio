@@ -25,6 +25,7 @@ html {
 
 main {
     display: block;
+    position: relative;
 }
 
 /* Global styles END */
@@ -401,21 +402,27 @@ header {
 
 .home {
     background-color: #021C33;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 10% 100%, 0 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 20% 100%, 0 92%);
     color: #fffbee;
-    height: 150vh;
+    height: min(fit-content, 150vh);
     position: relative;
-    top: 0;
     z-index: 400;
 }
 
     .home__development {
         text-align: center;
-        padding-top: 5%;
     }
 
         .development__header {
+            padding-top: max(5%, 50px);
+            margin-bottom: max(5%, 50px);
             font-size: 3.5rem;
+            /* fancy underline
+            background-image: linear-gradient(to right, transparent 0, #8872ad 60%);
+            background-position: center 6.4rem;
+            background-repeat: no-repeat;
+            background-size: 45% 15px;
+            */
         }
 
         .development__attributes {
@@ -423,53 +430,73 @@ header {
             flex-flow: row nowrap;
             justify-content: space-around;
             align-items: stretch;
-            margin: 5%;
+            margin: 0 4%;
         }
 
             .attributes__card {
-                align-items: center;
-                background-color: #32558c;
                 display: flex;
                 flex-flow: column nowrap;
+                justify-content: baseline;
+                background-color: #32558c;
                 flex: 1;
-                justify-content: space-between;
-                margin: 0 3%;
+                margin: 0 2%;
                 padding: 3%;
+                min-width: 20%;
             }
 
                 .card__header {
                     font-size: 1.9rem;
+                    height: 3.8rem;
                 }
 
                 .card__img {
                     max-height: 170px;
                     width: auto;
-                    padding: 20%
+                    padding: 10% 20% 20% 20%;
                 }
 
                 .card__description {
-                    text-align: center;
                     font-size: 1.1rem;
                     line-height: 1.3;
-                    flex: 1;
                 }
 
     .home__technologies {
-        margin-top: 7%;
         text-align: center;
     }
 
         .technologies__header {
-            font-size: 3rem;
+            padding-top: max(5%, 50px);
+            margin-bottom: max(5%, 50px);
+            font-size: 3.5rem;
         }
 
         .technologies__bar {
             display: flex;
             flex-flow: row nowrap;
+            justify-content: start;
             align-items: center;
-            justify-content: space-evenly;
-            margin: 5%;
+            overflow-x: scroll;
+            margin: 0 auto;
+            width: 90%;
+            padding-bottom: max(12%, 150px);
         }
+
+            .bar__item {
+                flex: 1;
+                padding: min(20px, 7%);
+                margin: 0 min(15px, 4%);
+                background-color: #32558c;
+            }
+
+            .bar__item > img {
+                width: auto;
+                height: 60px;
+            }
+
+            #nodejs_logo {
+                position: relative;
+                top: 6px;
+            }
 
 
 /* Home section END */
@@ -477,9 +504,9 @@ header {
 /* Project section START */
 
 .projects {
+    bottom: 48px;
     position: relative;
     height: 120vh;
-    bottom: calc(20vh + 96px);
     background-color: #32558c;
     clip-path: polygon(0 0, 20% 10%, 100% 0, 100% 100%, 70% 90%, 0 100%);
     z-index: 300;
@@ -487,14 +514,14 @@ header {
 
 /* Project section END */
 
-/* Contact sectio~n START */
+/* Contact section START */
 
 .contact {
+    bottom: 96px;
     position: relative;
     height: 80vh;
-    bottom: calc(32vh + 96px);
     background-color: #8872ad;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    clip-path: polygon(0 15%, 70% 0, 100% 15%, 100% 100%, 100% 100%, 0 100%);
     z-index: 200;
 }
 
@@ -519,12 +546,6 @@ header {
 
 .--hover-icon {
     filter: brightness(0) saturate(100%) invert(54%) sepia(12%) saturate(1379%) hue-rotate(221deg) brightness(86%) contrast(83%);
-}
-
-.--technology-icon {
-    height: 60px;
-    max-height: 100px;
-    width: auto;
 }
 
 .--hidden {
