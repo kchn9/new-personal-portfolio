@@ -417,9 +417,9 @@ header {
 
         .development__header {
             padding-top: max(5%, 50px);
-            margin-bottom: max(5%, 50px);
             font-size: 3.5rem;
             margin: 0 5%;
+            margin-bottom: max(5%, 50px);
             /* fancy underline
             background-image: linear-gradient(to right, transparent 0, #8872ad 60%);
             background-position: center 6.4rem;
