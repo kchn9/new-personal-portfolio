@@ -49,6 +49,7 @@ header::before {
 header {
     color: #fffbee;
     position: relative;
+    top: 0;
     overflow: hidden;
     font-size: 1.6rem;
     height: 100vh;
