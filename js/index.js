@@ -8,6 +8,7 @@ diveButton.addEventListener('click', () => {
     });
 })
 
+
 //ICON RECOLOR ON HOVER EFFECT
 /*
 const iconsCollection = document.getElementsByClassName('--icon-img');
@@ -35,3 +36,4 @@ toggleDropdownNavButton.addEventListener('click', () => {
 dropdownContent.addEventListener('mouseleave', () => {
     dropdownContent.classList.add(hideAttr);
 })
+

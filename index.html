@@ -106,40 +106,87 @@
                 </ul>
             </article>
             <article class='home__technologies'>
-                <h2 class='technologies__header'>Technologies</h2>
+                <h2 class='technologies__header'>Technologies & Tools</h2>
                 <ul class='technologies__bar'>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="HTML 5">
                         <img class='item__logo' src="./img/tech_logos/html5.svg" alt="HTML5 logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="CSS 3">
                         <img class='item__logo' src="./img/tech_logos/css-5.svg" alt="CSS3 logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="JavaScript ES6+">
                         <img class='item__logo' src="./img/tech_logos/logo-javascript.svg" alt="Javascript ES6 logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="Git">
                         <img class='item__logo' src="./img/tech_logos/git-icon.svg" alt="Git logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="Github workflow">
                         <img class='item__logo' src="./img/tech_logos/github-icon-1.svg" alt="GitHub logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="NodeJS">
                         <img class='item__logo' id='nodejs_logo' src="./img/tech_logos/node-js-logo.svg" alt="NodeJS logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="Bootstrap 4">
                         <img class='item__logo' src='./img/tech_logos/bootstrap-4.svg' alt="Bootstrap logo">
                     </li>
-                    <li class='bar__item'>
+                    <li class='bar__item' title="Terminal">
                         <img class='item__logo' src="./img/tech_logos/terminal-1.svg" alt="Terminal logo">
                     </li>
                 </ul>
             </article>
         </section>
 
+        <h2 class='header-projects'>My projects</h2>
         <section class='projects' id='projects'>
+            <ul class='projects__grid'>
+                <li class='grid__item'>
+                    <img src="./img/project_img/wflean-cls-com-website.png" alt="WacadeFlean commercial website thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/bootstrap-example-project.png" alt="Bootstrap project thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/react-example-project.png" alt="React project thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/portfolio-html-css-js.png" alt="Mateusz Kuchnia web developer portfolio website thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/comming-soon.png" alt="Comming soon thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/comming-soon.png" alt="Comming soon thumbnail">
+                </li>
+            </ul>
         </section>
 
         <section class='contact' id='contact'>
+            <h2 class='contact__header'>Contact</h2>
+            <div class='contact__grid'>
+                <div class='grid__social'>
+                    <h2 class='social__header'>You can find me there</h2>
+                    <ul class='social__links'>
+                        <li class='links__item'>
+                            <a href="https://github.com/kchn9"><img src="./img/github.svg" alt="GitHub logo"></a>
+                        </li>
+                        <li class='links__item'>
+                            <a href="https://www.linkedin.com/"><img src="./img/linkedin.svg" alt="LinkedIn logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='grid__mail'>
+                    <h2 class='mail__header'>or if you prefer more traditional way</h2>
+                    <h5 class='mail__add-header'>feel free to mail me</h5>
+                    <form class='mail__form' action='mailto:mat.kuchnia@gmail.com' method='POST'
+                    enctype=”multipart/form-data” name=”email”>
+                        <label class='form__label' for='name'>Name</label>
+                        <input class='form__name-input' placeholder='Your name' type='text' size='19' name='name' id='name' maxlength="100" required>
+                        <label class='form__label' for='message'>Message</label>
+                        <textarea class='form__msg-textarea' wrap='off' name='message' id='message' placeholder="Your message" rows='10' cols='25' maxlength="1000" required></textarea>
+                        <input class='form__submit-btn' type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
         </section>
         <!--Home section END-->
     </main>
