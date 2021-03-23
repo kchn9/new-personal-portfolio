@@ -475,8 +475,8 @@ header {
             letter-spacing: 0.1rem;
             padding-top: max(5%, 50px);
             font-size: 3rem;
-            border-bottom: #fffbee 3px solid;
-            line-height: 1.5;
+            border-bottom: #fffbee 2px solid;
+            line-height: 1.8;
             margin: 0 auto max(3%, 50px) auto;
             width: 40%;
         }
@@ -528,8 +528,12 @@ header {
 }
 
 @media only screen and (max-width: 1024px) {
-    .development__header, .technologies__header {
+    .development__header {
         font-size: 3.2rem;
+    }
+
+    .technologies__header {
+        font-size: 2.7rem;
     }
 
     .card__header {
@@ -554,8 +558,12 @@ header {
         max-height: 140px;
     }
 
-    .development__header, .technologies__header {
+    .development__header {
         font-size: 2.8rem;
+    }
+
+    .technologies__header {
+        font-size: 2.4rem;
     }
 
     .development__attributes {
@@ -612,8 +620,12 @@ header {
 }
 
 @media only screen and (max-width: 578px) {
-    .development__header, .technologies__header {
+    .development__header {
         font-size: 2.2rem;
+    }
+
+    .technologies__header {
+        font-size: 2rem;
     }
 
     .card__header {
@@ -630,10 +642,6 @@ header {
 }
 
 @media only screen and (max-width: 475px) {
-    .development__header, .technologies__header {
-        font-size: 2.2rem;
-    }
-
     .card__img {
         max-height: 100px;
     }
@@ -655,8 +663,12 @@ header {
         column-gap: 20%;
     }
 
-    .development__header, .technologies__header {
+    .development__header {
         font-size: 1.8rem;
+    }
+
+    .technologies__header {
+        font-size: 1.6rem;
     }
 
     .card__header {
@@ -716,7 +728,7 @@ header {
 .projects {
     position: relative;
     bottom: 32px;
-    height: 120vh;
+    height: 110vh;
     background-color: #32558c;
     clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 50% 90%, 0 100%);
     border: 21px solid #163460;
@@ -730,9 +742,9 @@ header {
     .projects__grid {
         position: relative;
         display: grid;
-        grid-template-columns: repeat(3, minmax(30%, 1fr));
-        grid-template-rows: repeat(2, minmax(min-content, 1fr));
-        gap: 2% 1%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1vh 0.8vw;
         justify-items: center;
         align-items: center;
         justify-content: center;
@@ -741,7 +753,10 @@ header {
     }
 
         .grid__item {
-            width: 100%;
+            max-width: 30vw;
+            min-width: calc(50vh / 1.77);
+            width: 53.31vw;
+            max-height: calc(33vw / 1.77);
             height: 35vh;
             background-color: #777777;
             overflow: hidden;
@@ -764,36 +779,35 @@ header {
 
 .contact {
     position: relative;
-    height: 120vh;
     background-color: #8872ad;
-    clip-path: polygon(0 11%, 50% 0, 100% 11%, 100% 100%, 100% 100%, 0 100%);
+    clip-path: polygon(0 8%, 50% 0, 100% 8%, 100% 100%, 100% 100%, 0 100%);
     border: 21px solid #56486E;
     border-top: none;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    align-items: flex-end;
+    align-items: center;
+    overflow: hidden;
 }
 
     .contact__header {
         color: #fffbee;
-        font-size: 3.5rem;
-        border-bottom: 4px solid #fffbee;
+        font-size: 4.5rem;
         line-height: 1.25;
-        letter-spacing: 0.2rem;
         margin: 0 auto;
-        padding: 0 5%;
         text-align: center;
         position: relative;
-        top: 5%;
+        margin-top: 4vh;
+        top: max(1vh, 30px);
     }
 
     .contact__grid {
-        position: absolute;
+        position: relative;
+        margin-top: max(10vh, 100px);
         display: grid;
         grid-template: repeat(1, 1fr) / repeat(2, 1fr);
         width: 100%;
-        bottom: 0;
+        height: 100%;
         justify-items: center;
         align-items: center;
         justify-content: center;
@@ -801,7 +815,7 @@ header {
     }
 
         .grid__social {
-            background-image: url('../img/background_arrows.svg');
+            background-image: url('../img/background_arrows_2.svg');
             background-position: 50% 40%;
             background-size: contain;
             background-repeat: no-repeat;
