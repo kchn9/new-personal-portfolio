@@ -718,7 +718,7 @@ header {
     font-size: 4.5rem;
     z-index: 200;
     text-align: center;
-    bottom: -8vh;
+    bottom: -11vh;
     /*
     background-image: linear-gradient(to right, transparent 0, #8872ad 60%);
     background-position: center 2rem;
@@ -729,7 +729,7 @@ header {
 
 .projects {
     position: relative;
-    bottom: 48px;
+    bottom: 24px;
     background-color: #32558c;
     clip-path: polygon(0 0, 50% 12%, 100% 0, 100% 100%, 50% 92%, 0 100%);
     border: 21px solid #163460;
@@ -741,11 +741,9 @@ header {
     padding: min(10vh, 15px) 0;
     overflow: hidden;
     min-height: 700px;
-    padding: 5% 0;
 }
 
     .projects__grid {
-        padding-top: 50px;
         position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -754,15 +752,14 @@ header {
         justify-items: center;
         align-items: center;
         justify-content: center;
-        align-content: space-between;
+        align-content: center;
+        padding: 12% 0;
         margin: 0 4%;
     }
 
         .grid__item {
-            min-width: 300px;
             width: 30vw;
-            max-height: 220px;
-            height: 30vh;
+            height: 18vw;
             background-color: #777777;
             overflow: hidden;
         }
@@ -779,7 +776,8 @@ header {
 
 @media only screen and (max-width: 1086px) {
     .projects {
-        clip-path: polygon(0 0, 50% 8%, 100% 0, 100% 100%, 50% 94%, 0 100%)
+        height: 90vw;
+        clip-path: polygon(0 0, 50% 7%, 100% 0, 100% 100%, 50% 93%, 0 100%)
     }
 
     .header-projects {
@@ -791,21 +789,14 @@ header {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             row-gap: 0.6vh;
-            margin: 0 7%;
-            padding: 10% 0;
+            margin: 0 5%;
+            padding: 9% 0;
         }
 
-            .grid__item {
-                width: 100%;
-                max-height: 220px;
-            }
-
-                .grid__item > img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                }
-
+        .grid__item {
+            width: 43vw;
+            height: 22vw;
+        }
 }
 
 @media only screen and (max-width: 864px) {
@@ -814,61 +805,52 @@ header {
     }
 
     .projects__grid {
-        padding-top: 13%;
+        padding: 0;
+        row-gap: 0.7vh;
     }
 
     .header-projects {
         font-size: 3.6rem;
-        bottom: -5vh;
-    }
-
-    .grid__item {
-        max-height: 190px;
+        bottom: -3vh;
     }
 }
 
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: 768px) {
     .projects {
-        clip-path: polygon(0 0, 50% 12%, 100% 0, 100% 100%, 50% 92%, 0 100%);
-    }
-
-    .projects__grid {
-        padding-top: 15%;
+        clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 50% 92%, 0 100%);
+        height: 100vw;
     }
 
     .header-projects {
         font-size: 3.4rem;
-        bottom: -7vh;
-    }
-
-    .grid__item {
-        max-height: 170px;
-        min-width: 250px;
+        bottom: -6vh;
     }
 }
 
 @media only screen and (max-width: 694px) {
     .header-projects {
         font-size: 3rem;
+        bottom: -10vh;
     }
 
     .projects {
-        height: 1600px;
-        clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 50% 96%, 0 100%);
+        min-height: 1400px;
+        clip-path: polygon(0 0, 50% 7%, 100% 0, 100% 100%, 50% 96%, 0 100%);
     }
 
     .projects__grid {
-        padding-top: min(50px, 10%);
         margin: 0;
         display: flex;
         flex-direction: column;
-        height: 85%;
-        justify-content: space-evenly;
+        height: 80%;
+        justify-content: center;
     }
 
     .grid__item {
-        max-height: 220px;
-        max-width: 384px;
+        width: 75vw;
+        height: 48vw;
+        min-height: 180px;
+        margin: .5% 0;
     }
 }
 
@@ -878,27 +860,38 @@ header {
         bottom: -5vh;
     }
 
-    .projects {
-        height: 350vw;
+    .projects {~
+        min-height: unset;
+        clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 50% 94%, 0 100%);
+        height: 270vw;
     }
 
     .grid__item {
-        max-height: 48vw;
-        max-width: 80vw;
-        min-width: 300px;
+        min-height: unset;
+        width: 70vw;
+        height: 34vw;
     }
 }
 
 @media only screen and (max-width: 375px) {
+    .projects {
+        clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 100%, 50% 93%, 0 100%);
+    }
+
     .header-projects {
         font-size: 2rem;
         bottom: -4vh;
     }
+}
 
-    .grid__item {
-        max-height: 47vw;
-        max-width: 80vw;
-        min-width: 250px;
+@media only screen and (max-width: 280px) {
+    .projects {
+        clip-path: polygon(0 0, 50% 6%, 100% 0, 100% 100%, 50% 92%, 0 100%);
+    }
+
+    .header-projects {
+        font-size: 1.7rem;
+        bottom: -4vh;
     }
 }
 
