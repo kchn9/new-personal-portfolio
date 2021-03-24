@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Kuchnia | Web developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png?v=2">
+    <link rel="manifest" href="./img/favicon/site.webmanifest?v=2">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!--Intro section BEGIN-->
+    <header>
+        <section class='intro'>
+            <img class='intro__avatar' src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar"/>
+            <div class='intro__text'>
+                <h1 class='text__greeting'>Hello!</h1>
+                <div class='text__introduction'>
+                    <h2 class='introduction__name'>I'm Mateusz Kuchnia</h2>
+                    <hr>
+                    <h3 class='introduction__job'>Web developer</h3>
+                </div>
+            </div>
+            <p class='intro__description'>
+                Inquisitive and ambitious fledgling web developer.
+                Constantly developing my skills and love to work in team.
+                Always curious and creative.
+            </p>
+            <button class='intro__enter-btn --none-style'>Dive</button>
+        </section>
+    </header>
+    <!--Intro section END-->
+
+    <!--Navbar BEGIN-->
+    <nav class='navigation'>
+        <div class='navigation__logo'>
+            <h4 class='logo__name'>Mateusz Kuchnia</h4>
+            <h6 class='logo__job'>Web developer</h6>
+        </div>
+        <ul class='navigation__bar'>
+            <li class='bar__link'>
+                <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
+                <a class='link__bar-text' href='#home'>Home</a>
+            </li>
+            <li class='bar__link'>
+                <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon'>
+                <a class='link__bar-text' href='#projects'>Projects</a>
+            </li>
+            <li class='bar__link'>
+                <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon'>
+                <a class='link__bar-text' href='#contact    '>Contact me</a>
+            </li>
+        </ul>
+        <button class='navigation__menu-btn --none-style --hidden'>
+            <img class='--icon-img' src='./img/icons/icons8-menu.svg' id='icon_menu' alt='Menu icon'>
+        </button>
+        <ul class='navigation__dropdown --hidden'>
+            <li class='dropdown__link'>
+                <a class='link__dropdown-text' href='...'>Home</a>
+                <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
+            </li>
+            <li class='dropdown__link'>
+                <a class='link__dropdown-text' href='...'>Projects</a>
+                <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon'>
+            </li>
+            <li class='dropdown__link'>
+                <a class='link__dropdown-text' href='...'>Contact me</a>
+                <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon'>
+            </li>
+        </ul>
+    </nav>
+    <!--Navbar END-->
+
+    <main>
+        <!--Home section START-->
+        <section class='home' id='home'>
+            <article class='home__development'>
+                <h2 class="development__header">Modern web development</h2>
+                <ul class="development__attributes">
+                    <li class='attributes__card'>
+                        <h5 class="card__header">Fresh and optimized</h5>
+                        <img class='card__img --card-icon' src="./img/icons/innovation.png" alt="Innovation icon">
+                        <p class='card__description'>
+                            Created websites are following the newest trends.
+                            They look modern, but that doesn't affect performance making browsing them enjoyable.
+                        </p>
+                    </li>
+                    <li class='attributes__card'>
+                        <h5 class="card__header">User experience</h5>
+                        <img class='card__img --card-icon' src="./img/icons/ux.png" alt="Mobile UX design icon">
+                        <p class='card__description'>
+                            Responsive design ensures that sites look well on every device.
+                            Individually selected solutions for each problem allow the creation of precisely what the user expects.
+                        </p>
+                    </li>
+                    <li class='attributes__card'>
+                        <h5 class="card__header">SEO & A11y</h5>
+                        <img class='card__img --card-icon' src="./img/icons/search-engine.png" alt="SEO icon">
+                        <p class='card__description'>
+                            Search engine optimization makes created websites easier to find, while accessibility (A11y) ensures they reach a maximum audience.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            <article class='home__technologies'>
+                <h2 class='technologies__header'>Technologies & Tools</h2>
+                <ul class='technologies__bar'>
+                    <li class='bar__item' title="HTML 5">
+                        <img class='item__logo' src="./img/tech_logos/html5.svg" alt="HTML5 logo">
+                    </li>
+                    <li class='bar__item' title="CSS 3">
+                        <img class='item__logo' src="./img/tech_logos/css-5.svg" alt="CSS3 logo">
+                    </li>
+                    <li class='bar__item' title="JavaScript ES6+">
+                        <img class='item__logo' src="./img/tech_logos/logo-javascript.svg" alt="Javascript ES6 logo">
+                    </li>
+                    <li class='bar__item' title="Git">
+                        <img class='item__logo' src="./img/tech_logos/git-icon.svg" alt="Git logo">
+                    </li>
+                    <li class='bar__item' title="Github workflow">
+                        <img class='item__logo' src="./img/tech_logos/github-icon-1.svg" alt="GitHub logo">
+                    </li>
+                    <li class='bar__item' title="NodeJS">
+                        <img class='item__logo' id='nodejs_logo' src="./img/tech_logos/node-js-logo.svg" alt="NodeJS logo">
+                    </li>
+                    <li class='bar__item' title="Bootstrap 4">
+                        <img class='item__logo' src='./img/tech_logos/bootstrap-4.svg' alt="Bootstrap logo">
+                    </li>
+                    <li class='bar__item' title="Terminal">
+                        <img class='item__logo' src="./img/tech_logos/terminal-1.svg" alt="Terminal logo">
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!--Home section END-->
+
+        <!--Projects section START-->
+        <h2 class='header-projects'>My projects</h2>
+        <section class='projects' id='projects'>
+            <ul class='projects__grid'>
+                <li class='grid__item'>
+                    <img src="./img/project_img/wflean-cls-com-website.png" alt="WacadeFlean commercial website thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/bootstrap-example-project.png" alt="Bootstrap project thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/react-example-project.png" alt="React project thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/portfolio-html-css-js.png" alt="Mateusz Kuchnia web developer portfolio website thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/comming-soon.png" alt="Comming soon thumbnail">
+                </li>
+                <li class='grid__item'>
+                    <img src="./img/project_img/comming-soon.png" alt="Comming soon thumbnail">
+                </li>
+            </ul>
+        </section>
+        <!--Projects section END-->
+
+        <!--Contact section START-->
+        <section class='contact' id='contact'>
+            <h2 class='contact__header'>Contact</h2>
+            <div class='contact__grid'>
+                <div class='grid__social'>
+                    <h2 class='social__header'>You can find me there</h2>
+                    <ul class='social__links'>
+                        <li class='links__item'>
+                            <a href="https://github.com/kchn9"><img src="./img/github.svg" alt="GitHub logo"></a>
+                        </li>
+                        <li class='links__item'>
+                            <a href="https://www.linkedin.com/in/mateusz-kuchnia-4b35a2206"><img src="./img/linkedin.svg" alt="LinkedIn logo"></a>
+                        </li>
+                    </ul>
+                </div>
+            <div class='grid__mail'>
+                <h2 class='mail__header'>or if you prefer more traditional way</h2>
+                <h5 class='mail__add-header'>feel free to mail me</h5>
+                <form class='mail__form' action='mailto:mat.kuchnia@gmail.com' method='POST'
+                enctype=”multipart/form-data” name=”email”>
+                    <label class='form__label' for='name'>Name</label>
+                    <input class='form__name-input' placeholder='Your name' type='text' size='19' name='name' id='name' maxlength="100" required>
+                    <label class='form__label' for='message'>Message</label>
+                    <textarea class='form__msg-textarea' wrap='off' name='message' id='message' placeholder="Your message" rows='10' cols='25' maxlength="1000" required></textarea>
+                    <input class='form__submit-btn' type="submit" value="Submit">
+                </form>
+            </div>
+            </div>
+        </section>
+        <!--Contact section END-->
+
+    </main>
+
+    <!--Background START-->
+    <canvas class="particles-background"></canvas>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/canvas.js"></script>
+    <!--Background END-->
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
