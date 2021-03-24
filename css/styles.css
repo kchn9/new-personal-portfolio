@@ -937,7 +937,7 @@ header {
     }
 
         .grid__social {
-            background-image: url('../img/background_arrows_2.svg');
+            background-image: url('../img/contact_arrows/background_arrows.svg');
             background-position: 50% 40%;
             background-size: contain;
             background-repeat: no-repeat;
@@ -1089,7 +1089,224 @@ header {
                     left: 3%;
                 }
 
+@media only screen and (max-width: 1024px) {
+    .grid__social {
+        background-image: url('../img/contact_arrows/background_arrows_1024.svg');
+    }
 
+    .contact__header {
+        font-size: 4rem;
+    }
+
+    .social__header {
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
+    .mail__header {
+        font-size: 2rem;
+    }
+
+    .mail__add-header {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    .contact__grid {
+        grid-template: repeat(2, max-content) / repeat(1, 1fr);
+    }
+
+    .grid__social {
+        border: none;
+        background-image: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    .grid__social::after {
+        position: relative;
+        content: "";
+        width: 70%;
+        border-bottom: #413653 4px solid;
+        margin: 3% auto;
+        border-radius: 3px;
+    }
+
+    .social__links {
+        padding: unset;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+        margin: 0;
+        width: unset;
+        height: unset;
+        margin-bottom: 5%;
+    }
+
+    .links__item {
+        flex: 1 1 0;
+        transform: scale(0.7);
+    }
+
+    .form__label {
+        right: 5%;
+    }
+
+    .grid__mail {
+        border: none;
+        height: min-content;
+    }
+
+    .mail__form {
+        margin: 2% auto;
+        padding-bottom: 5%;
+    }
+
+    .contact__header {
+        font-size: 3.5rem;
+    }
+
+    .social__header {
+        padding-bottom: 5%;
+    }
+
+    .social__header, .mail__header {
+        font-size: 2.5rem;
+    }
+
+    .mail__add-header {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .contact {
+        clip-path: polygon(0 6%, 50% 0, 100% 6%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    .contact__header {
+        font-size: 3.2rem;
+        margin: 0;
+    }
+
+    .mail__header, .social__header {
+        font-size: 2rem;
+        padding-bottom: 0;
+    }
+
+    .mail__add-header {
+        font-size: 1.4rem;
+    }
+
+    .form__name-input {
+        height: 35px;
+        font-size: 1.1rem;
+    }
+
+    .form__msg-textarea {
+        height: 50vw;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    .contact {
+        clip-path: polygon(0 7%, 50% 0, 100% 7%, 100% 100%, 100% 100%, 0 100%);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .contact__header {
+        font-size: 3rem;
+    }
+
+    .mail__header, .social__header {
+        font-size: 1.8rem;
+    }
+
+    .mail__add-header {
+        font-size: 1.3rem;
+    }
+
+    .links__item {
+        transform: scale(0.6);
+    }
+
+    .form__label {
+        font-size: 1.1rem;
+    }
+
+    .form__submit-btn {
+        font-size: 1.2rem;
+        padding: 4% 5%;
+    }
+
+    .form__name-input {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .contact {
+        clip-path: polygon(0 8%, 50% 0, 100% 8%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    .contact__header {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .mail__header, .social__header {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .links__item {
+        transform: scale(0.5);
+    }
+
+    .mail__add-header {
+        font-size: 1.2rem;
+    }
+
+    .form__msg-textarea {
+        height: 40vw;
+    }
+
+    .form__label {
+        font-size: .9rem;
+        padding: 5px 0;
+    }
+
+    .form__submit-btn {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .contact {
+        clip-path: polygon(0 9%, 50% 0, 100% 9%, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    .contact__header {
+        font-size: 2.1rem;
+    }
+
+    .mail__header, .social__header {
+        font-size: 1.2rem;
+    }
+
+    .mail__add-header {
+        font-size: .9rem;
+    }
+}
 
 /* Contact section END */
 
