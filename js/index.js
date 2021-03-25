@@ -36,4 +36,3 @@ toggleDropdownNavButton.addEventListener('click', () => {
 dropdownContent.addEventListener('mouseleave', () => {
     dropdownContent.classList.add(hideAttr);
 })
-
