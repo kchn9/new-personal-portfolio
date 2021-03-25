@@ -1,3 +1,5 @@
+const particlejs = require('particlesjs');
+
 //DIVE BUTTON
 const diveButton = document.querySelector('.intro__enter-btn');
 diveButton.addEventListener('click', () => {
