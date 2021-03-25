@@ -1,6 +1,5 @@
 {
   "name": "portfolio-website-new",
-  "homepage": "https://kchn9.github.io/new-personal-portfolio/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/kchn9/new-personal-portfolio/issues"
   },
+  "homepage": "https://github.com/kchn9/new-personal-portfolio#readme",
   "dependencies": {
     "particlesjs": "^2.2.3"
   },
