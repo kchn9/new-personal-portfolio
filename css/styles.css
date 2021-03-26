@@ -33,7 +33,6 @@ main {
 
 /* Intro-section styles START */
 
-/*
 header::before {
     content: '';
     position: absolute;
@@ -47,7 +46,6 @@ header::before {
     opacity: 0.6;
     transform: rotate(180deg);
 }
-*/
 
 header {
     color: #fffbee;
