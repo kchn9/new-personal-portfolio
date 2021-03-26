@@ -1,3 +1,7 @@
+//PROPER SCALING ON MOBILE
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 //DIVE BUTTON
 const diveButton = document.querySelector('.intro__enter-btn');
 diveButton.addEventListener('click', () => {
@@ -8,6 +12,16 @@ diveButton.addEventListener('click', () => {
     });
 })
 
+//SMOOTH SCROLLING FOR EVERY ANCHOR
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 //ICON RECOLOR ON HOVER EFFECT
 /*
@@ -25,7 +39,7 @@ for (let icon of iconsCollection) {
 */
 
 //DROPDOWN NAVIGATION
-const toggleDropdownNavButton = document.querySelector('.navigation__menu-btn');
+const toggleDropdownNavButton = document.querySelector('.bar__menu-btn');
 const dropdownContent = document.querySelector('.navigation__dropdown');
 const hideAttr = '--hidden';
 

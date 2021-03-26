@@ -35,32 +35,37 @@
     <!--Intro section END-->
 
     <!--Navbar BEGIN-->
-    <nav class='navigation'>
-        <div class='navigation__logo'>
+    <nav class='navigation__bar'>
+        <div class='bar__logo'>
             <h4 class='logo__name'>Mateusz Kuchnia</h4>
             <h6 class='logo__job'>Web developer</h6>
         </div>
-        <ul class='navigation__bar'>
-            <li class='bar__link' id='home-bar'>
-                <a class='link__bar-text' href='#home'>Home
+        <ul class='bar__links'>
+            <li class='links__item' id='home-bar'>
+                <a class='item__bar-text' href='#home'>Home
                     <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
                 </a>
             </li>
-            <li class='bar__link' id='projects-bar'>
-                <a class='link__bar-text' href='#projects'>Projects
+            <li class='links__item' id='projects-bar'>
+                <a class='item__bar-text' href='#projects'>Projects
                     <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon'>
                 </a>
             </li>
-            <li class='bar__link' id='contact-bar'>
-                <a class='link__bar-text' href='#contact'>Contact me
+            <li class='links__item' id='contact-bar'>
+                <a class='item__bar-text' href='#contact'>Contact me
                     <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon'>
                 </a>
             </li>
         </ul>
-        <button class='navigation__menu-btn --none-style --hidden'>
+        <button class='bar__menu-btn --none-style --hidden'>
             <img class='--icon-img' src='./img/icons/icons8-menu.svg' id='icon_menu' alt='Menu icon'>
         </button>
-        <ul class='navigation__dropdown --hidden'>
+    </nav>
+    <!--Navbar END-->
+
+    <!--Nav dropdown BEGIN-->
+    <nav class='navigation__dropdown --hidden'>
+        <ul>
             <li class='dropdown__link'>
                 <a class='link__dropdown-text' href='#home'>Home
                     <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon'>
@@ -78,7 +83,7 @@
             </li>
         </ul>
     </nav>
-    <!--Navbar END-->
+    <!--Nav dropdown END-->
 
     <main>
         <!--Home section START-->
