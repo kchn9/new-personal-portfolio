@@ -12,6 +12,17 @@ diveButton.addEventListener('click', () => {
     });
 })
 
+//SMOOTH SCROLLING FOR EVERY ANCHOR
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 //ICON RECOLOR ON HOVER EFFECT
 /*
 const iconsCollection = document.getElementsByClassName('--icon-img');
