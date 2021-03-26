@@ -1,5 +1,3 @@
-import particlejs from "particlesjs";
-
 // PARTICLE BACKGROUND
 window.onload = function() {
     Particles.init({
