@@ -19,6 +19,7 @@ COLOR PALETTE:
 }
 
 html {
+    scroll-padding-top: 0;
     font-size: 16px;
     background-color: #021C33;
     font-family: 'Newsreader', 'Times New Roman', Times, serif;
@@ -34,7 +35,6 @@ main {
 /* Intro-section styles START */
 
 header::before {
-    margin-top: 0;
     content: '';
     position: absolute;
     width: 100%;
