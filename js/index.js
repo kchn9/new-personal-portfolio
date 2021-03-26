@@ -39,7 +39,7 @@ for (let icon of iconsCollection) {
 */
 
 //DROPDOWN NAVIGATION
-const toggleDropdownNavButton = document.querySelector('.navigation__menu-btn');
+const toggleDropdownNavButton = document.querySelector('.bar__menu-btn');
 const dropdownContent = document.querySelector('.navigation__dropdown');
 const hideAttr = '--hidden';
 
