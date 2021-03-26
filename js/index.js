@@ -1,3 +1,7 @@
+//PROPER SCALING ON MOBILE
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 //DIVE BUTTON
 const diveButton = document.querySelector('.intro__enter-btn');
 diveButton.addEventListener('click', () => {
@@ -7,7 +11,6 @@ diveButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 })
-
 
 //ICON RECOLOR ON HOVER EFFECT
 /*
