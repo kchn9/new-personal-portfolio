@@ -34,6 +34,11 @@ a:focus {
     outline: 0;
 }
 
+*::selection {
+    color: black;
+    background-color: #086ABF;
+}
+
 /* Global styles END */
 
 /* Intro-section styles START */
@@ -534,15 +539,13 @@ header {
 
         .technologies__bar {
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: start;
+            flex-flow: row wrap;
+            justify-content: center;
             align-items: center;
-            overflow-x: scroll;
             margin: 0 auto;
             width: 90%;
             padding-bottom: max(12%, 150px);
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+
         }
 
         .technologies__bar::-webkit-scrollbar {
@@ -550,9 +553,9 @@ header {
         }
 
             .bar__item {
-                flex: 1;
-                padding: min(20px, 7%);
-                margin: 0 min(15px, 4%);
+                flex-basis: 100px;
+                padding: min(15px, 7%);
+                margin: min(12px, 5%);
                 background-color: #32558c;
             }
 
