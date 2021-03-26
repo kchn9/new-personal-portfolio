@@ -30,6 +30,10 @@ main {
     position: relative;
 }
 
+a:focus {
+    outline: 0;
+}
+
 /* Global styles END */
 
 /* Intro-section styles START */
@@ -281,7 +285,6 @@ header {
         min-width: fit-content;
         bottom: 12px;
         margin-right: 1%;
-        font-family: 'Lato', sans-serif;
     }
 
         .links__item {
@@ -338,7 +341,7 @@ header {
                 padding: 0 1%;
                 font-style: italic;
                 text-decoration: none;
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 color: #fffbee;
             }
 
@@ -395,7 +398,7 @@ header {
 
 @media only screen and (max-width: 1024px) {
     .item__bar-text {
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
 
     .logo__name {

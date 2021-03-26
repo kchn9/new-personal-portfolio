@@ -13,13 +13,20 @@ diveButton.addEventListener('click', () => {
 })
 
 //SMOOTH SCROLLING FOR EVERY ANCHOR
+const headerOffset = -100;
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        //get destination without hash
+        const hrefAttr = anchor.getAttribute('href');
+        const destination = document.querySelector(hrefAttr);
+        const destinationPosition = destination.getBoundingClientRect().top;
+        const positionEndpoint = destinationPosition + headerOffset;
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        window.scrollBy({
+            top: positionEndpoint,
+            behavior: "smooth"
+       });
     });
 });
 
