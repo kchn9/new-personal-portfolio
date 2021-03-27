@@ -16,7 +16,7 @@
     <!--Intro section BEGIN-->
     <header role="banner">
         <section class='intro' role='region'>
-            <img class='intro__avatar' src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar" role='img'/>
+            <img class='intro__avatar wow animate__animated animate__shakeY' data-wow-delay="2s" data-wow-duration="3s" src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar" role='img'/>
             <div class='intro__text' role="region">
                 <h1 class='text__greeting' role='heading' aria-label="Hello!">
                     <span class="animate__animated animate__fadeInUp">H</span><span class="animate__animated animate__fadeInUp">e</span><span class="animate__animated animate__fadeInUp">l</span><span class="animate__animated animate__fadeInUp">l</span><span class="animate__animated animate__fadeInUp">o</span><span class="animate__animated animate__fadeInUp">!</span>
@@ -91,10 +91,10 @@
     <main role='main'>
         <!--Home section START-->
         <section class='home' id='home' role='region'>
-            <article class='home__development wow animate__animated animate__fadeIn' data-wow-duration="3500ms" role='region'>
+            <article class='home__development wow animate__animated animate__fadeIn' data-wow-duration="3s" role='region'>
                 <h2 class="development__header" role='heading'>Modern web development</h2>
                 <ul class="development__attributes" role='presentation'>
-                    <li class='attributes__card wow animate__animated animate__backInLeft' data-wow-delay='300ms' role='contentinfo'>
+                    <li class='attributes__card wow animate__animated animate__backInUp' role='contentinfo'>
                         <h5 class="card__header" role='heading'>Fresh and optimized</h5>
                         <img class='card__img --card-icon' src="./img/icons/innovation.png" alt="Innovation icon" role='img'>
                         <p class='card__description' role='complementary'>
@@ -102,7 +102,7 @@
                             They look modern, but that doesn't affect performance making browsing them enjoyable.
                         </p>
                     </li>
-                    <li class='attributes__card wow animate__animated animate__backInUp' data-wow-delay='600ms' role='contentinfo'>
+                    <li class='attributes__card wow animate__animated animate__backInUp' data-wow-delay='500ms' role='contentinfo'>
                         <h5 class="card__header" role='heading'>User experience</h5>
                         <img class='card__img --card-icon' src="./img/icons/ux.png" alt="Mobile UX design icon" role='img'>
                         <p class='card__description' role='complementary'>
@@ -110,7 +110,7 @@
                             Individually selected solutions for each problem allow the creation of precisely what the user expects.
                         </p>
                     </li>
-                    <li class='attributes__card wow animate__animated animate__backInRight' data-wow-delay='900ms' role='contentinfo'>
+                    <li class='attributes__card wow animate__animated animate__backInUp' data-wow-delay='1000ms' role='contentinfo'>
                         <h5 class="card__header" role='heading'>SEO & A11y</h5>
                         <img class='card__img --card-icon' src="./img/icons/search-engine.png" alt="SEO icon" role='img'>
                         <p class='card__description' role='complementary'>
@@ -155,22 +155,22 @@
         <h2 class='header-projects wow animate__animated animate__fadeInDown' role='heading'>My projects</h2>
         <section class='projects' id='projects' role='region'>
             <ul class='projects__grid' role='presentation'>
-                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="400ms" role='contentinfo'>
+                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="200ms" role='contentinfo'>
                     <img src="./img/project_img/wflean-cls-com-website.png" alt="WacadeFlean commercial website thumbnail" role='img'>
                 </li>
-                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="800ms" role='contentinfo'>
+                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="500ms" role='contentinfo'>
                     <img src="./img/project_img/bootstrap-example-project.png" alt="Bootstrap project thumbnail" role='img'>
                 </li>
-                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="1200ms" role='contentinfo'>
+                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="800ms" role='contentinfo'>
                     <img src="./img/project_img/react-example-project.png" alt="React project thumbnail" role='img'>
                 </li>
-                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="1600ms" role='contentinfo'>
+                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="1100ms" role='contentinfo'>
                     <img src="./img/project_img/portfolio-html-css-js.png" alt="Mateusz Kuchnia web developer portfolio website thumbnail" role='img'>
                 </li>
-                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="2000ms" role='contentinfo'>
+                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="1400ms" role='contentinfo'>
                     <img src="./img/project_img/comming-soon.png" alt="Comming soon thumbnail" role='img'>
                 </li>
-                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="2400ms" role='contentinfo'>
+                <li class='grid__item wow animate__animated animate__fadeIn' data-wow-delay="1700ms" role='contentinfo'>
                     <img src="./img/project_img/comming-soon.png" alt="Comming soon thumbnail" role='img'>
                 </li>
             </ul>
@@ -182,7 +182,7 @@
             <h2 class='contact__header wow animate__animated animate__fadeInDown' role='heading'>Contact me</h2>
             <div class='contact__grid' role='region'>
                 <div class='grid__social' role='presentation'>
-                    <h2 class='social__header' role='heading'>You can find me there</h2>
+                    <h2 class='social__header wow animate__animated animate__fadeInDown' role='heading'>You can find me there</h2>
                     <ul class='social__links' role='presentation'>
                         <li class='links__social-item' role='contentinfo'>
                             <a href="https://github.com/kchn9" role='contentinfo'>
@@ -197,14 +197,14 @@
                     </ul>
                 </div>
             <div class='grid__mail' role='region'>
-                <h2 class='mail__header' role='heading'>or if you prefer more traditional way</h2>
-                <h5 class='mail__add-header' role='complementary'>feel free to mail me</h5>
-                <form class='mail__form' action='mailto:mat.kuchnia@gmail.com' method='POST'
+                <h2 class='mail__header wow animate__animated animate__fadeInDown' role='heading'>or if you prefer more traditional way</h2>
+                <h5 class='mail__add-header wow animate__animated animate__fadeInDown' role='complementary'>feel free to mail me</h5>
+                <form class='mail__form wow animate__animated animate__fadeIn' action='mailto:mat.kuchnia@gmail.com' method='POST'
                 enctype=”multipart/form-data” name=”email” role='form'>
                     <label class='form__label' for='name' role='contentinfo'>Name</label>
                     <input class='form__name-input' placeholder='Your name' type='text' size='19' name='name' id='name' maxlength="100" required role="textbox" autocomplete="on">
                     <label class='form__label' for='message' role='contentinfo'>Message</label>
-                    <textarea class='form__msg-textarea' wrap='off' name='message' id='message' placeholder="Your message" rows='10' cols='25' maxlength="1000" required role="textbox"> </textarea>
+                    <textarea class='form__msg-textarea' wrap='off' name='message' id='message' placeholder="Your message" rows='10' cols='25' maxlength="1000" required role="textbox"></textarea>
                     <input class='form__submit-btn' type="submit" value="Submit" role="button">
                 </form>
             </div>
