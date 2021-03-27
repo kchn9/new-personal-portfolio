@@ -997,7 +997,7 @@ header {
 
         .grid__social {
             background-image: url('../img/contact_arrows/background_arrows.svg');
-            background-position: 50% 40%;
+            background-position: 50% 50%;
             background-size: contain;
             background-repeat: no-repeat;
             width: 100%;
@@ -1015,7 +1015,7 @@ header {
             .social__links {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 padding: 10% 0;
                 width: 40%;
                 height: 65%;
@@ -1150,7 +1150,7 @@ header {
 
 @media only screen and (max-width: 1024px) {
     .grid__social {
-        background-image: url('../img/contact_arrows/background_arrows_1024.svg');
+        background-position: 50% 25%;
     }
 
     .contact__header {
