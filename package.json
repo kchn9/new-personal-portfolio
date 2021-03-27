@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/kchn9/new-personal-portfolio#readme",
   "dependencies": {
-    "particlesjs": "^2.2.3"
+    "particlesjs": "^2.2.3",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"

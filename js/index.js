@@ -16,6 +16,10 @@ window.onload = function() {
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+//WOW REVEALING
+const wow = require('wow.js');
+new wow().init();
+
 //DIVE BUTTON
 const diveButton = document.querySelector('.intro__enter-btn');
 diveButton.addEventListener('click', () => {
