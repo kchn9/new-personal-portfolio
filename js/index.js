@@ -18,7 +18,10 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 //WOW REVEALING
 const wow = require('wow.js');
-new wow().init();
+new wow({
+        offset: 100,
+        mobile: false
+}).init();
 
 //HELLO ANIMATION
 let delay = 0;
