@@ -20,7 +20,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 //WOW REVEALING
 const wow = require('wow.js');
 new wow({
-        offset: 150
+        offset: -100
 }).init();
 
 //HELLO ANIMATION
