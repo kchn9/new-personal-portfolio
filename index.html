@@ -18,7 +18,9 @@
         <section class='intro' role='region'>
             <img class='intro__avatar' src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar" role='img'/>
             <div class='intro__text' role="region">
-                <h1 class='text__greeting' role='heading'>Hello!</h1>
+                <h1 class='text__greeting' role='heading' aria-label="Hello!">
+                    <span class="animate__animated animate__fadeInUp">H</span><span class="animate__animated animate__fadeInUp">e</span><span class="animate__animated animate__fadeInUp">l</span><span class="animate__animated animate__fadeInUp">l</span><span class="animate__animated animate__fadeInUp">o</span><span class="animate__animated animate__fadeInUp">!</span>
+                </h1>
                 <div class='text__introduction' role='complementary'>
                     <h2 class='introduction__name' role="heading">I'm Mateusz Kuchnia</h2>
                     <hr>
@@ -30,7 +32,7 @@
                 Constantly developing my skills and love to work in team.
                 Always curious and creative.
             </p>
-            <button class='intro__enter-btn --none-style' role="button">Click here & check my work</button>
+            <button class='intro__enter-btn animate__animated' role="button">Click here & check my work</button>
         </section>
     </header>
     <!--Intro section END-->
@@ -58,7 +60,7 @@
                 </a>
             </li>
         </ul>
-        <button class='bar__menu-btn --none-style --hidden' role='button'>
+        <button class='bar__menu-btn --none-style --hidden' role='button' aria-label="Menu">
             <img class='--icon-img' src='./img/icons/icons8-menu.svg' id='icon_menu' alt='Menu icon' role='img'>
         </button>
     </nav>
@@ -89,10 +91,10 @@
     <main role='main'>
         <!--Home section START-->
         <section class='home' id='home' role='region'>
-            <article class='home__development' role='region'>
+            <article class='home__development wow animate__animated animate__fadeIn' data-wow-duration="1800ms" role='region'>
                 <h2 class="development__header" role='heading'>Modern web development</h2>
                 <ul class="development__attributes" role='presentation'>
-                    <li class='attributes__card wow animate__animated animate__fadeInBottomLeft' role='contentinfo'>
+                    <li class='attributes__card wow animate__animated animate__backInLeft' data-wow-delay='300ms' role='contentinfo'>
                         <h5 class="card__header" role='heading'>Fresh and optimized</h5>
                         <img class='card__img --card-icon' src="./img/icons/innovation.png" alt="Innovation icon" role='img'>
                         <p class='card__description' role='complementary'>
@@ -100,7 +102,7 @@
                             They look modern, but that doesn't affect performance making browsing them enjoyable.
                         </p>
                     </li>
-                    <li class='attributes__card wow animate__animated animate__fadeInUp' role='contentinfo'>
+                    <li class='attributes__card wow animate__animated animate__backInUp' data-wow-delay='550ms' role='contentinfo'>
                         <h5 class="card__header" role='heading'>User experience</h5>
                         <img class='card__img --card-icon' src="./img/icons/ux.png" alt="Mobile UX design icon" role='img'>
                         <p class='card__description' role='complementary'>
@@ -108,7 +110,7 @@
                             Individually selected solutions for each problem allow the creation of precisely what the user expects.
                         </p>
                     </li>
-                    <li class='attributes__card wow animate__animated animate__fadeInBottomRight' role='contentinfo'>
+                    <li class='attributes__card wow animate__animated animate__backInRight' data-wow-delay='800ms' role='contentinfo'>
                         <h5 class="card__header" role='heading'>SEO & A11y</h5>
                         <img class='card__img --card-icon' src="./img/icons/search-engine.png" alt="SEO icon" role='img'>
                         <p class='card__description' role='complementary'>
@@ -117,7 +119,7 @@
                     </li>
                 </ul>
             </article>
-            <article class='home__technologies' role='region'>
+            <article class='home__technologies wow animate__animated animate__backInUp' data-wow-duration="2800ms" role='region'>
                 <h2 class='technologies__header' role='heading'>Technologies & Tools</h2>
                 <ul class='technologies__bar' role='presentation'>
                     <li class='bar__item' title="HTML 5" role='contentinfo'>
@@ -150,7 +152,7 @@
         <!--Home section END-->
 
         <!--Projects section START-->
-        <h2 class='header-projects' role='heading'>My projects</h2>
+        <h2 class='header-projects wow animate__animated animate__fadeInDown' role='heading'>My projects</h2>
         <section class='projects' id='projects' role='region'>
             <ul class='projects__grid' role='presentation'>
                 <li class='grid__item' role='contentinfo'>
@@ -177,7 +179,7 @@
 
         <!--Contact section START-->
         <section class='contact' id='contact' role='region'>
-            <h2 class='contact__header' role='heading'>Contact</h2>
+            <h2 class='contact__header wow animate__animated animate__fadeInDown' role='heading'>Contact</h2>
             <div class='contact__grid' role='region'>
                 <div class='grid__social' role='presentation'>
                     <h2 class='social__header' role='heading'>You can find me there</h2>

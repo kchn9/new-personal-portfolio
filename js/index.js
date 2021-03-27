@@ -12,14 +12,6 @@ window.onload = function() {
     });
 };
 
-//disable scrolling
-function noScroll() {
-    window.scrollTo(0, 0);
-  }
-  
-  // add listener to disable scroll
-  window.addEventListener('scroll', noScroll);
-
 //PROPER SCALING ON MOBILE
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -28,14 +20,35 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 const wow = require('wow.js');
 new wow().init();
 
-//DIVE BUTTON
-const diveButton = document.querySelector('.intro__enter-btn');
-diveButton.addEventListener('click', () => {
+//HELLO ANIMATION
+let delay = 0;
+const helloChildren = document.querySelector('.text__greeting').children;
+for (let child of helloChildren) {
+    child.style.setProperty('animation-delay', `${delay}ms`);
+    delay += 150;
+};
+
+//SCROLL TO MAIN
+const scrollToMain = () => {
     window.scrollBy({
         top: window.innerHeight,
         left: 0,
         behavior: 'smooth'
     });
+}
+
+//DISABLE SCROLLING
+const noScroll = () => window.scrollTo(0, 0);
+document.body.style.overflowY = 'hidden';
+
+//DIVE BUTTON
+window.addEventListener('scroll', noScroll);
+const diveButton = document.querySelector('.intro__enter-btn');
+diveButton.addEventListener('click', (e) => {
+    window.removeEventListener('scroll', noScroll);
+    document.body.style.overflowY = 'initial';
+    window.setTimeout(scrollToMain, 2000);
+    e.target.classList.add('animate__hinge');
 })
 
 //SMOOTH SCROLLING FOR EVERY ANCHOR
