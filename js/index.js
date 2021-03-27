@@ -1,6 +1,7 @@
 //PARTICLE BACKGROUND
+const particles = require('particlesjs');
 window.onload = function() {
-    Particles.init({
+    particles.init({
       selector: '.particles-background',
       maxParticles: 90,
       sizeVariations: 4,
