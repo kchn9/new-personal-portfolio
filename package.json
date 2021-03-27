@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "browserify ./js/index.js -o ./js/bundle.js",
     "deploy": "gh-pages -d ."
   },
   "repository": {
