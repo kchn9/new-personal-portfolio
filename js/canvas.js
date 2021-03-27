@@ -10,11 +10,3 @@ window.onload = function() {
       connectParticles: true
     });
 };
-
-/*
-const canvas = document.getElementById('text');
-const ctx = canvas.getContext('2d');
-ctx.font = '1.5rem Newsreader';
-ctx.fillStyle = '#fffbee';
-ctx.fillText('Home', canvas.width/2, canvas.height/2);
-*/
