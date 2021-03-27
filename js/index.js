@@ -12,9 +12,21 @@ window.onload = function() {
     });
 };
 
+//disable scrolling
+function noScroll() {
+    window.scrollTo(0, 0);
+  }
+  
+  // add listener to disable scroll
+  window.addEventListener('scroll', noScroll);
+
 //PROPER SCALING ON MOBILE
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+//WOW REVEALING
+const wow = require('wow.js');
+new wow().init();
 
 //DIVE BUTTON
 const diveButton = document.querySelector('.intro__enter-btn');
