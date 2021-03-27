@@ -1,3 +1,16 @@
+//PARTICLE BACKGROUND
+window.onload = function() {
+    Particles.init({
+      selector: '.particles-background',
+      maxParticles: 90,
+      sizeVariations: 4,
+      speed: 0.5,
+      color: '#32558C',
+      minDistance: 50,
+      connectParticles: true
+    });
+};
+
 //PROPER SCALING ON MOBILE
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
