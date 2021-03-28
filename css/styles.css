@@ -973,7 +973,7 @@ header {
 
     .contact__header {
         color: #fffbee;
-        font-size: 4.5rem;
+        font-size: 4rem;
         line-height: 1.25;
         margin: 0 auto;
         text-align: center;
@@ -1154,7 +1154,8 @@ header {
     }
 
     .contact__header {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        padding-top: 1rem;
     }
 
     .social__header {
@@ -1178,6 +1179,10 @@ header {
 
     .contact__grid {
         grid-template: repeat(2, max-content) / repeat(1, 1fr);
+    }
+
+    .contact__header {
+        font-size: 3.2rem;
     }
 
     .grid__social {
@@ -1251,17 +1256,17 @@ header {
     }
 
     .contact__header {
-        font-size: 3.2rem;
+        font-size: 2.9rem;
         margin: 0;
     }
 
     .mail__header, .social__header {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-bottom: 0;
     }
 
     .mail__add-header {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .form__name-input {
@@ -1283,7 +1288,7 @@ header {
 
 @media only screen and (max-width: 425px) {
     .contact__header {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     .mail__header, .social__header {
@@ -1318,12 +1323,12 @@ header {
     }
 
     .contact__header {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin: 0;
     }
 
     .mail__header, .social__header {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding-bottom: 0;
     }
 
@@ -1332,15 +1337,15 @@ header {
     }
 
     .mail__add-header {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .form__msg-textarea {
-        height: 40vw;
+        height: 35vw;
     }
 
     .form__label {
-        font-size: .9rem;
+        font-size: 1rem;
         padding: 5px 0;
     }
 
@@ -1359,11 +1364,11 @@ header {
     }
 
     .mail__header, .social__header {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .mail__add-header {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 }
 
