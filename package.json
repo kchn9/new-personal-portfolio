@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kchn9/new-personal-portfolio#readme",
   "dependencies": {
+    "hover.css": "^2.3.2",
     "particlesjs": "^2.2.3",
     "wow.js": "^1.2.2"
   },

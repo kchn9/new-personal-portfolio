@@ -16,9 +16,11 @@
     <!--Intro section BEGIN-->
     <header role="banner">
         <section class='intro' role='region'>
-            <img class='intro__avatar' src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar" role='img'/>
+            <img class='intro__avatar wow animate__animated animate__shakeY' data-wow-delay="2s" data-wow-duration="3s" src="./img/my-avatar.png" alt="Mateusz Kuchnia avatar" role='img'/>
             <div class='intro__text' role="region">
-                <h1 class='text__greeting' role='heading'>Hello!</h1>
+                <h1 class='text__greeting' role='heading' aria-label="Hello!">
+                    <span class="animate__animated animate__fadeInUp">H</span><span class="animate__animated animate__fadeInUp">e</span><span class="animate__animated animate__fadeInUp">l</span><span class="animate__animated animate__fadeInUp">l</span><span class="animate__animated animate__fadeInUp">o</span><span class="animate__animated animate__fadeInUp">!</span>
+                </h1>
                 <div class='text__introduction' role='complementary'>
                     <h2 class='introduction__name' role="heading">I'm Mateusz Kuchnia</h2>
                     <hr>
@@ -30,7 +32,7 @@
                 Constantly developing my skills and love to work in team.
                 Always curious and creative.
             </p>
-            <button class='intro__enter-btn --none-style' role="button">Click here & check my work</button>
+            <button class='intro__enter-btn animate__animated' role="button">Click here & check my work</button>
         </section>
     </header>
     <!--Intro section END-->
@@ -42,23 +44,23 @@
             <h6 class='logo__job' role="complementary">Web developer</h6>
         </div>
         <ul class='bar__links' role="presentation">
-            <li class='links__item' id='home-bar' role="contentinfo">
-                <a class='item__bar-text' href='#home' role='contentinfo'>Home
+            <li class='links__item hvr-underline-from-left' id='home-bar' role="contentinfo">
+                <a id='home-bar-anchor' class='animate__animated animate__slower animate__delay-1s animate__infinite item__bar-text' href='#home' role='contentinfo'>Home
                     <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon' role='img'>
                 </a>
             </li>
-            <li class='links__item' id='projects-bar' role="contentinfo">
-                <a class='item__bar-text' href='#projects' role='contentinfo'>Projects
+            <li class='links__item hvr-underline-from-left' id='projects-bar' role="contentinfo">
+                <a id='projects-bar-anchor' class='animate__animated animate__slower animate__delay-1s animate__infinite item__bar-text' href='#projects' role='contentinfo'>Projects
                     <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon' role='img'>
                 </a>
             </li>
-            <li class='links__item' id='contact-bar' role="contentinfo">
-                <a class='item__bar-text' href='#contact' role='contentinfo'>Contact me
+            <li class='links__item hvr-underline-from-left' id='contact-bar' role="contentinfo">
+                <a id='contact-bar-anchor' class='animate__animated animate__slower animate__delay-1s animate__infinite item__bar-text' href='#contact' role='contentinfo'>Contact me
                     <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon' role='img'>
                 </a>
             </li>
         </ul>
-        <button class='bar__menu-btn --none-style --hidden' role='button'>
+        <button class='bar__menu-btn --none-style --hidden' role='button' aria-label="Menu">
             <img class='--icon-img' src='./img/icons/icons8-menu.svg' id='icon_menu' alt='Menu icon' role='img'>
         </button>
     </nav>
@@ -68,18 +70,18 @@
     <nav class='navigation__dropdown --hidden' role='navigation'>
         <ul role='presentation'>
             <li class='dropdown__link' role='contentinfo'>
-                <a class='link__dropdown-text' href='#home' role='contentinfo'>Home
-                    <img class='--icon-img' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon' role='img'>
+                <a class='link__dropdown-text hvr-bounce-to-right' href='#home' role='contentinfo'>Home
+                    <img class='--icon-img hvr-wobble-vertical' src='./img/icons/icons8-home.svg' id='icon_home' alt='Home icon' role='img'>
                 </a>
             </li>
             <li class='dropdown__link' role='contentinfo'>
-                <a class='link__dropdown-text' href='#projects' role='contentinfo'>Projects
-                    <img class='--icon-img' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon' role='img'>
+                <a class='link__dropdown-text hvr-bounce-to-right' href='#projects' role='contentinfo'>Projects
+                    <img class='--icon-img hvr-wobble-vertical' src='./img/icons/icons8-project.png' id='icon_project' alt='Projects icon' role='img'>
                 </a>
             </li>
             <li class='dropdown__link' role='contentinfo'>
-                <a class='link__dropdown-text' href='#contact' role='contentinfo'>Contact me
-                    <img class='--icon-img' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon' role='img'>
+                <a class='link__dropdown-text hvr-bounce-to-right' href='#contact' role='contentinfo'>Contact me
+                    <img class='--icon-img hvr-wobble-vertical' src='./img/icons/icons8-contact.png' id='icon_contact' alt='Contact me icon' role='img'>
                 </a>
             </li>
         </ul>
@@ -94,7 +96,7 @@
                 <ul class="development__attributes" role='presentation'>
                     <li class='attributes__card' role='contentinfo'>
                         <h5 class="card__header" role='heading'>Fresh and optimized</h5>
-                        <img class='card__img --card-icon' src="./img/icons/innovation.png" alt="Innovation icon" role='img'>
+                        <img class='card__img animate__animated --card-icon' src="./img/icons/innovation.png" alt="Innovation icon" role='img'>
                         <p class='card__description' role='complementary'>
                             Created websites are following the newest trends.
                             They look modern, but that doesn't affect performance making browsing them enjoyable.
@@ -102,7 +104,7 @@
                     </li>
                     <li class='attributes__card' role='contentinfo'>
                         <h5 class="card__header" role='heading'>User experience</h5>
-                        <img class='card__img --card-icon' src="./img/icons/ux.png" alt="Mobile UX design icon" role='img'>
+                        <img class='card__img animate__animated --card-icon' src="./img/icons/ux.png" alt="Mobile UX design icon" role='img'>
                         <p class='card__description' role='complementary'>
                             Responsive design ensures that sites look well on every device.
                             Individually selected solutions for each problem allow the creation of precisely what the user expects.
@@ -110,7 +112,7 @@
                     </li>
                     <li class='attributes__card' role='contentinfo'>
                         <h5 class="card__header" role='heading'>SEO & A11y</h5>
-                        <img class='card__img --card-icon' src="./img/icons/search-engine.png" alt="SEO icon" role='img'>
+                        <img class='card__img animate__animated --card-icon' src="./img/icons/search-engine.png" alt="SEO icon" role='img'>
                         <p class='card__description' role='complementary'>
                             Search engine optimization makes created websites easier to find, while accessibility (A11y) ensures they reach a maximum audience.
                         </p>
@@ -120,28 +122,28 @@
             <article class='home__technologies' role='region'>
                 <h2 class='technologies__header' role='heading'>Technologies & Tools</h2>
                 <ul class='technologies__bar' role='presentation'>
-                    <li class='bar__item' title="HTML 5" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="HTML 5" role='contentinfo'>
                         <img class='item__logo' src="./img/tech_logos/html5.svg" alt="HTML5 logo" aria-label="HTML5" role='img'>
                     </li>
-                    <li class='bar__item' title="CSS 3" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="CSS 3" role='contentinfo'>
                         <img class='item__logo' src="./img/tech_logos/css-5.svg" alt="CSS3 logo" aria-label="CSS3" role='img'>
                     </li>
-                    <li class='bar__item' title="JavaScript ES6+" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="JavaScript ES6+" role='contentinfo'>
                         <img class='item__logo' src="./img/tech_logos/logo-javascript.svg" alt="Javascript ES6 logo" aria-label="JavaScript ES6+" role='img'>
                     </li>
-                    <li class='bar__item' title="Git" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="Git" role='contentinfo'>
                         <img class='item__logo' src="./img/tech_logos/git-icon.svg" alt="Git logo" aria-label="Git" role='img'>
                     </li>
-                    <li class='bar__item' title="Github workflow" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="Github workflow" role='contentinfo'>
                         <img class='item__logo' src="./img/tech_logos/github-icon-1.svg" alt="GitHub logo" aria-label="Github" role='img'>
                     </li>
-                    <li class='bar__item' title="NodeJS" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="NodeJS" role='contentinfo'>
                         <img class='item__logo' id='nodejs_logo' src="./img/tech_logos/node-js-logo.svg" alt="NodeJS logo" aria-label="NodeJS" role='img'>
                     </li>
-                    <li class='bar__item' title="Bootstrap 4" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="Bootstrap 4" role='contentinfo'>
                         <img class='item__logo' src='./img/tech_logos/bootstrap-4.svg' alt="Bootstrap logo" aria-label="Bootstrap" role='img'>
                     </li>
-                    <li class='bar__item' title="Terminal" role='contentinfo'>
+                    <li class='bar__item hvr-grow-shadow' title="Terminal" role='contentinfo'>
                         <img class='item__logo' src="./img/tech_logos/terminal-1.svg" alt="Terminal logo" aria-label="Terminal/Bash" role='img'>
                     </li>
                 </ul>
@@ -183,13 +185,13 @@
                     <h2 class='social__header' role='heading'>You can find me there</h2>
                     <ul class='social__links' role='presentation'>
                         <li class='links__social-item' role='contentinfo'>
-                            <a href="https://github.com/kchn9" role='contentinfo'>
-                                <img src="./img/github.svg" alt="GitHub logo" role='img'>
+                            <a href="https://github.com/kchn9" class="hvr-hang" target="_blank" role='contentinfo'>
+                                <img class="animate__animated animate__slow" src="./img/github.svg" alt="GitHub logo" role='img'>
                             </a>
                         </li>
                         <li class='links__social-item' role='contentinfo'>
-                            <a href="https://www.linkedin.com/in/mateusz-kuchnia-4b35a2206" role='contentinfo'>
-                                <img src="./img/linkedin.svg" alt="LinkedIn logo" role='img'>
+                            <a href="https://www.linkedin.com/in/mateusz-kuchnia-4b35a2206" class="hvr-hang" target="_blank" role='contentinfo'>
+                                <img class="animate__animated animate__slow"  src="./img/linkedin.svg" alt="LinkedIn logo" role='img'>
                             </a>
                         </li>
                     </ul>
@@ -202,7 +204,7 @@
                     <label class='form__label' for='name' role='contentinfo'>Name</label>
                     <input class='form__name-input' placeholder='Your name' type='text' size='19' name='name' id='name' maxlength="100" required role="textbox" autocomplete="on">
                     <label class='form__label' for='message' role='contentinfo'>Message</label>
-                    <textarea class='form__msg-textarea' wrap='off' name='message' id='message' placeholder="Your message" rows='10' cols='25' maxlength="1000" required role="textbox"> </textarea>
+                    <textarea class='form__msg-textarea' wrap='off' name='message' id='message' placeholder="Your message" rows='10' cols='25' maxlength="1000" required role="textbox"></textarea>
                     <input class='form__submit-btn' type="submit" value="Submit" role="button">
                 </form>
             </div>
