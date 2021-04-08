@@ -512,7 +512,7 @@ header {
             border-bottom: 8px solid #8872ad;
             border-image-slice: 1;
             border-image: linear-gradient(to right, transparent 0, #8872ad 60%);
-            border-image-width: 1 90% 25% 1;
+            border-image-width: 0 90% 25% 0;
             z-index: -1;
         }
 

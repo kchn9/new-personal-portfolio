@@ -31,6 +31,10 @@ for (let child of helloChildren) {
 };
 
 //SCROLL TO MAIN AND ANIMATE NAV
+const smoothscroll = require('smoothscroll-polyfill');
+smoothscroll.polyfill();
+
+
 const navName = document.querySelector('.logo__name');
 const navJob = document.querySelector('.logo__job');
 
